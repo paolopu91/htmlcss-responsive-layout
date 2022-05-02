@@ -3,58 +3,83 @@
     padding: 0%;
     box-sizing: border-box;
   }
-  :root{
-    --color-primary: rgb(68, 54, 133);
-    --color-secondary: rgb(42, 42, 219);
+:root{
+    --color-primary: #9792E4;
+    --color-secondary: #0084FD;
     --color-secondary-ligth: colore da usare per le colonne azzurre;
     -color-terzary: black;
   }
-  .navbar{
+ .container-nav{
+     height: 25px;
+ } 
+.navbar{
       padding: 15px;
       display: flex;
-      border: 1px solid lightgray;
-      position: fixed;
       width: 100%;
-      z-index: 999;
   }
-  .container{ 
+.sp-btw{
+    justify-content: space-between;
+}
+.color-txt-white{
+    color: white;
+}
+.padding{
+    padding: .2rem;
+}
+.f-f-navbar{
+    font-family: serif;
+    font-size: 17px;
+}
+.txt-bold{
+    font-weight: bold;
+}
+.btn{
+      border-radius: 2rem;
+      background-color: white;
+      padding: .5rem;
+      border: none;
+  }
+.d-flex{
+      display: flex;
+  }
+.container{ 
     width: 980px;
     margin: 0 auto;
     border: 1px dashed red;
     padding-bottom:2rem;
     padding-top:2rem;
   }
-  .section{
+.section{
    padding-top: 2rem;
    padding-bottom: 2rem;
   }
-  .row{
+.row{
     display: flex;
     flex-wrap: wrap;
   }
-  .col{
+.col{
     flex-grow: 1;
     flex-basis: 0;
   }
-  .col-1{
+.col-1{
     flex-basis: calc(100% / 3);
   }
-  .col-2{
+.col-2{
     flex-basis: calc((100% /3) *2);
   }
-  .card{
+.card{
     background-color: red;
     border-radius: 1rem;
     min-height: 100%;
     padding: 3rem;
   }
-  .bg-primary{
+.bg-primary{
     background-color: var(--color-primary)
   }
-  .bg-secondary{
+.bg-secondary{
     background-color: var(--color-secondary)
   }
-  @media screen and (max-width: 992px){
+@media screen and (max-width: 992px){
     .container{
       width: 768px;
     }
@@ -63,7 +88,7 @@
       flex-basis: 50%;
     }
   }
-  @media screen and (max-width: 768px){
+ @media screen and (max-width: 768px){
     .container{
       width: 576px;
     }
@@ -74,7 +99,7 @@
       flex-basis: 100%;
     }
   }
-  @media screen and (max-width: 576px){
+ @media screen and (max-width: 576px){
     .container{
       width: 576px;
     }
