@@ -2,15 +2,20 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    /* font-size: 15px; */
   }
 :root{
     --color-primary: #9792E4;
     --color-secondary: #0084FD;
-    --color-secondary-ligth: colore da usare per le colonne azzurre;
+    --color-secondary-ligth: #B5DDFF;
     -color-terzary: black;
   }
- .container-nav{
-     height: 25px;
+.container-nav{
+    height: 25px;
+    width: 980px;
+    margin: 0 auto;
+    border: 1px dashed red;
+    padding-bottom: 2rem;
  } 
 .navbar{
       padding: 15px;
@@ -23,6 +28,12 @@
 .color-txt-white{
     color: white;
 }
+.padding-md{
+    padding: 15px;
+}
+.color-txt-lightgray{
+    color: lightslategray;
+}
 .padding{
     padding: .2rem;
 }
@@ -33,21 +44,46 @@
 .txt-bold{
     font-weight: bold;
 }
+.img-first-card{
+    width: 80%;
+    margin-top: 80px;
+}
 .btn{
-      border-radius: 2rem;
-      background-color: white;
-      padding: .5rem;
-      border: none;
+    border-radius: 2rem;
+    background-color: white;
+    padding: .5rem;
+    border: none;
   }
+.btn-appStore{
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--color-secondary);
+    padding-top:.5rem;
+    padding-bottom:.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: white;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.color-h2-blu{
+    color: var(--color-secondary);
+}
 .d-flex{
       display: flex;
-  }
+}
+.svg-size{
+    font-size: 90px;
+    color: var(--color-secondary);
+}
+.txt-center{
+    text-align: center;
+}
 .container{ 
     width: 980px;
     margin: 0 auto;
     border: 1px dashed red;
-    padding-bottom:2rem;
-    padding-top:2rem;
+    padding: 1rem;
   }
 .section{
    padding-top: 2rem;
@@ -68,10 +104,10 @@
     flex-basis: calc((100% /3) *2);
   }
 .card{
-    background-color: red;
+    background-color: var(--color-secondary-ligth);
     border-radius: 1rem;
     min-height: 100%;
-    padding: 3rem;
+    padding: 1rem;
   }
 .bg-primary{
     background-color: var(--color-primary)
