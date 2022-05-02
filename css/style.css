@@ -28,6 +28,9 @@
 .color-txt-white{
     color: white;
 }
+.padding-stategic{
+    padding: 25px 50px;
+}
 .padding-md{
     padding: 15px;
 }
@@ -66,11 +69,45 @@
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+.no-wrap{
+    flex-wrap: nowrap;
+}
 .color-h2-blu{
     color: var(--color-secondary);
 }
 .d-flex{
       display: flex;
+}
+.border-arrow{
+    width: 35px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    margin-left: 100px;
+}
+.margin-top{
+    margin-top: 50px;
+}
+.p-strategic{
+    padding-right: 60px;
+}
+.img-size-strategic{
+    width: 60%;
+    margin-bottom: 100px;
+}
+.img-size-development{
+    width: 100%;
+}
+.font-corsivo{
+    font-style: italic;
+}
+.bg-white-radius{
+    background-color: white;
+    border-radius: 10%;
+    padding: 2rem;
+}
+.margin-bottom{
+    margin-bottom: 30px;
 }
 .svg-size{
     font-size: 90px;
