@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  :root{
+    --color-primary: rgb(68, 54, 133);
+    --color-secondary: rgb(42, 42, 219);
+    --color-secondary-ligth: colore da usare per le colonne azzurre;
+    -color-terzary: black;
+  }
+  .navbar{
+      padding: 15px;
+      display: flex;
+      border: 1px solid lightgray;
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+  }
+  .container{ 
+    width: 980px;
+    margin: 0 auto;
+    border: 1px dashed red;
+    padding-bottom:2rem;
+    padding-top:2rem;
+  }
+  .section{
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col{
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .col-1{
+    flex-basis: calc(100% / 3);
+  }
+  .col-2{
+    flex-basis: calc((100% /3) *2);
+  }
+  .card{
+    background-color: red;
+    border-radius: 1rem;
+    min-height: 100%;
+    padding: 3rem;
+  }
+  .bg-primary{
+    background-color: var(--color-primary)
+  }
+  .bg-secondary{
+    background-color: var(--color-secondary)
+  }
+  @media screen and (max-width: 992px){
+    .container{
+      width: 768px;
+    }
+    .col-lg-half{
+      flex-grow: 1;
+      flex-basis: 50%;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .container{
+      width: 576px;
+    }
+    .col-md-half{
+      flex-basis: 50%;
+    }
+    .col-md-full{
+      flex-basis: 100%;
+    }
+  }
+  @media screen and (max-width: 576px){
+    .container{
+      width: 576px;
+    }
+    .col-sm-half{
+      flex-basis: 50%;
+    }
+    .col-sm-full{
+      flex-basis: 100%;
+    }
+  }
